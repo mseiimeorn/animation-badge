@@ -4,14 +4,14 @@ var letters = document.querySelectorAll('.letter');
 function stopAnimation() {
     netcentric && netcentric.querySelector('path') && netcentric.querySelector('path').classList.remove('animated');
     Array.from(letters).forEach(function(letter) {
-        letter.classList.remove('letter-animation');;
+        letter.classList.remove('letter-animation');
     });
 }
 
 function startAnimation() {
     netcentric && netcentric.querySelector('path') && netcentric.querySelector('path').classList.add('animated');
     Array.from(letters).forEach(function(letter) {
-        letter.classList.add('letter-animation');;
+        letter.classList.add('letter-animation');
     });
 }
 
