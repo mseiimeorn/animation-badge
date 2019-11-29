@@ -1,13 +1,11 @@
-const netcentric = document.querySelector('.netcentric');
+const netcentric = document.querySelector('.NC');
 
-const stopAnimation = (event) => {
-    console.log(event.target);
-    event.target.classList.remove('animated');
+var stopAnimation= function () {
+    netcentric && netcentric.querySelector('path') && netcentric.querySelector('path').classList.remove('animated');
 }
 
-const startAnimation = (event) => {
-    console.log(event.target);
-    event.target.classList.add('animated');
+var startAnimation = function () {
+    netcentric && netcentric.querySelector('path') && netcentric.querySelector('path').classList.add('animated');
 }
 
 (function () {
