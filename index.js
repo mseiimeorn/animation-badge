@@ -1,4 +1,4 @@
-var netcentric = document.querySelector('.NC');
+var netcentric = document.querySelector('.nc');
 var letters = document.querySelectorAll('.letter');
 
 function stopAnimation() {
