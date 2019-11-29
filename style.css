@@ -1,0 +1,75 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+}
+
+#NC {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    overflow: visible;
+}
+
+path {
+    stroke: black;
+    /* fill: black; */
+    stroke-dasharray: 450;
+    opacity: 10;
+}
+
+.netcentric {
+    stroke: #5a3699;
+    stroke-width: 2;
+    fill: none;
+    /* fill: #5a3699; */
+    stroke-dasharray: 450;
+    opacity: 10;
+    animation: netcentric 3s cubic-bezier(0, 0.2, 0.5, 0.15) infinite alternate;
+}
+
+.a path {
+    opacity: 1;
+}
+
+.cognizant:hover path {
+    fill: black;
+}
+
+.digital:hover path {
+    fill: black;
+}
+
+.business:hover path {
+    fill: black;
+}
+
+@keyframes netcentric {
+    0% {
+        opacity: 0;
+        stroke-dashoffset: 450;
+        fill: none;
+    }
+    7% {
+        opacity: 10;
+        stroke-dashoffset: 450;
+    }
+    90% {
+        opacity: 10;
+        fill-opacity: 0;
+        fill: none;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
