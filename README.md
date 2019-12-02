@@ -8,3 +8,7 @@ Clone the repo and either open the index.html file or start a server e.g. via
 or
 
 `npm install -g live-server` and `live-server`
+
+or visit
+
+https://mseiimeorn.github.io/animation-badge/
